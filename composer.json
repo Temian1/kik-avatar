@@ -1,0 +1,52 @@
+{
+	"name": "kikter/avatars",
+	"description": "Official Laravel wrapper around avatars.com and LasseRafn/php-initial-avatar-generator",
+	"keywords": [
+		"laravel",
+		"ui-avatars",
+		"php",
+		"avatars",
+		"initials"
+	],
+	"type": "library",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Adeala",
+			"email": "kikismedia@gmail.com"
+		},
+		{
+			"name": "kikter",
+			"email": "kikster@gmail.com"
+		}
+	],
+	"require": {
+		"php": "^7.3|^8.0",
+		"lasserafn/php-initial-avatar-generator": "^4.0",
+		"laravel/framework": "~5.5|~5.6|~5.7|~5.8|~5.9|~6.0|^7.0|^8.0|^9.0"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "^7.0",
+		"satooshi/php-coveralls": "^1.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Rackbeat\\UIAvatars\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"UIAvatars\\Tests\\": "tests/"
+		}
+	},
+	"config": {
+		"sort-packages": true
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Rackbeat\\UIAvatars\\UIAvatarsServiceProvider"
+			]
+		}
+	}
+}
